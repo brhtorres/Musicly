@@ -1,0 +1,14 @@
+{% extends 'musicly/base.html' %}
+
+{% block content %}
+
+<div class = "content">
+    {% for music in musics %}
+    <div class = "musics">
+        <h2><a href="">{{music}} </a></h2>
+        <p>{{music.music_singer}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
